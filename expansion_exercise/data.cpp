@@ -35,28 +35,28 @@ int main(int argc, char const *argv[]) {
 // details of the functions, length of the step is 0.000001
 // create the domain of plotting
 void x(double l, double u) {
-  for (double i = l; i <= u; i += 0.000001) {
+  for (double i = l; i <= u; i += 0.00001) {
     x_out << i << endl;
   }
 }
 
 // (x-1)^7 is expanded in y1 to compute
 void y1(double l, double u) {
-  for (double i = l; i <= u; i += 0.000001) {
+  for (double i = l; i <= u; i += 0.00001) {
     y1_out << pow(i, 7) - 7 * pow(i, 6) + 21 * pow(i, 5) - 35 * pow(i, 4) + 35 * pow(i, 3) - 21 * pow(i, 2) + 7 * i - 1 << endl;
   }
 }
 
 // (x-1)^7
 void y2(double l, double u) {
-  for (double i = l; i <= u; i += 0.000001) {
+  for (double i = l; i <= u; i += 0.00001) {
     y2_out << pow((i - 1), 7) << endl;
   }
 }
 
 // relative error
 void error(double l, double u) {
-  for (double i = l; i <= u; i += 0.000001) {
+  for (double i = l; i <= u; i += 0.00001) {
     error_out << abs((pow(i, 7) - 7 * pow(i, 6) + 21 * pow(i, 5) - 35 * pow(i, 4) + 35 * pow(i, 3) - 21 * pow(i, 2) + 7 * i - 1) - (pow((i - 1), 7)))/ abs(pow((i - 1), 7)) << endl;
   }
 }
