@@ -11,7 +11,7 @@ class LinearEq():
         self.A[:, :self.n] = coefficient.copy()
         self.A[:, self.A.shape[1] - 1] = vector  + 0.0# assign the vector to the last column
         
-    def guass(self):
+    def gauss(self):
         """Gauss elimination, return the solve vector"""
         # elimination phase
         for i in range(self.n):
@@ -30,4 +30,4 @@ A = np.array([[2, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]])
 b = np.array([2, 2, 3, 4])
 
 eq = LinearEq(A, b)
-eq.guass()
+eq.gauss()
