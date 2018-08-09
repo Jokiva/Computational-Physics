@@ -1,0 +1,1 @@
+if you wish to use quadmath library with GCC, you should add *-l quadmath* when compiling.
