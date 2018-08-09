@@ -4,4 +4,4 @@ In lecture 2, Prof. Fu introduces UNIX and GNU Linux operating systems and some 
 
 Knowing Linux may seem peripheral for this course but it is **really** useful if working on a server is a part of your future career. Most servers are equipped with a Linux operating system, whether it is CentOS, Ubuntu or other distributions. Basis of Linux can help you be more competitive when applying for an intern to boost your grad application. Besides, many scientific framework is running in Linux.
 
-I prepared a note of common bash commands. Hope it is useful.
+I prepared a note of common bash commands and one for shell programs. Hope They are useful.
